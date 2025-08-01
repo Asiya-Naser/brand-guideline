@@ -1,8 +1,8 @@
 // BrandWork.jsx
 
-import React from 'react';
+import React, { useState } from "react";
 import "./Brandwork.css";
-// ✅ Data array of your brand items
+
 const projects = [
   {
     title: "Elegance Consult Branding",
@@ -20,6 +20,16 @@ const projects = [
 ];
 
 const BrandWork = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (imgSrc) => {
+    setSelectedImage(imgSrc);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <div className="brand-work">
       {projects.map((project, index) => (
@@ -30,12 +40,33 @@ const BrandWork = () => {
             {project.items.map((item, idx) => (
               <div key={idx} className="item">
                 <h4>{item.name}</h4>
-                <img src={item.image} alt={item.name} style={{ width: '200px', borderRadius: '8px' }} />
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  style={{
+                    width: "200px",
+                    borderRadius: "8px",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => openModal(item.image)}
+                />
               </div>
             ))}
           </div>
         </div>
       ))}
+
+      {/* Modal Preview */}
+      {selectedImage && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <img src={selectedImage} alt="Preview" />
+            <button className="close-btn" onClick={closeModal}>
+              ✖
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
