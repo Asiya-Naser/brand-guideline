@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../../public/assets/logo2.png"; // make sure the path is correct
-import "./Home.css";
+import "./home.css";
 
 const Home = () => {
   return (
