@@ -1,0 +1,18 @@
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+  color: #2a2552;
+}
+
+section {
+  padding: 2rem;
+}
