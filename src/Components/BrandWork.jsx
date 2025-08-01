@@ -13,7 +13,7 @@ const projects = [
       { name: "Business Card", image: "/assets/card.jpg" },
       { name: "Mug Mockup", image: "/assets/mug.png" },
       { name: "Facebook cover", image: "/assets/facebook.png" },
-      { name: "Social Media", image: "/assets/social.png" },
+      { name: "Social Media", image: "/assets/Social Media post.png" },
       { name: "Banner", image: "/assets/banner.png" },
     ],
   },
