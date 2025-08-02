@@ -1,5 +1,7 @@
 // src/components/ColorPalette.jsx
 
+import Footer from "./footer";
+
 function ColorBox({ color, name }) {
   return (
     <div style={{ textAlign: "center" }}>
@@ -15,6 +17,7 @@ function ColorBox({ color, name }) {
       <p>
         {name} — {color}
       </p>
+      <Footer/>
     </div>
   );
 }

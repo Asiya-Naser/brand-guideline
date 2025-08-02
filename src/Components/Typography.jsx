@@ -1,5 +1,7 @@
 // src/components/Typography.jsx
 
+import Footer from "./footer";
+
 function Typography() {
   return (
     <div style={{ padding: "2rem" }}>
@@ -54,6 +56,7 @@ function Typography() {
         Secondary Body Text – Poppins Regular: Our mission is to combine
         functionality with visual excellence.
       </p>
+      <Footer/>
     </div>
   );
 }

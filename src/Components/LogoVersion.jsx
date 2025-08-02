@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./footer";
 
 const LogoVersion = () => {
   return (
@@ -25,6 +26,7 @@ const LogoVersion = () => {
           boxShadow: "0 0 15px rgba(0,0,0,0.1)",
         }}
       />
+      <Footer/>
     </div>
   );
 };

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import "./Brandwork.css";
+import Footer from "./footer";
 
 const projects = [
   {
@@ -67,6 +68,7 @@ const BrandWork = () => {
           </div>
         </div>
       )}
+      <Footer/>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../public/assets/logo2.png"; // make sure the path is correct
 import "./home.css";
+import Footer from "./footer";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Link to="/brandwork" className="home-btn">
           View Brand Work
         </Link>
+        < Footer/>
       </div>
     </section>
   );
