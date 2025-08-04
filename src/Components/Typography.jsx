@@ -1,6 +1,6 @@
 // src/components/Typography.jsx
 
-import Footer from "./footer";
+import Footer from "./Footer.jsx";
 
 function Typography() {
   return (

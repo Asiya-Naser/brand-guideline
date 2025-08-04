@@ -1,6 +1,6 @@
 // src/components/ColorPalette.jsx
 
-import Footer from "./footer";
+import Footer from "./Footer.jsx";
 
 function ColorBox({ color, name }) {
   return (

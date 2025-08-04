@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../../public/assets/logo2.png"; // make sure the path is correct
-import "./home.css";
-import Footer from "./footer";
-
+import Footer from "./Footer";
 const Home = () => {
   return (
     <section className="home">
