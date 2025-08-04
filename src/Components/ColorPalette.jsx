@@ -17,7 +17,7 @@ function ColorBox({ color, name }) {
       <p>
         {name} — {color}
       </p>
-      <Footer/>
+     
     </div>
   );
 }
@@ -34,6 +34,7 @@ function ColorPalette() {
         <ColorBox color="#FFFFFF" name="White" />
         <ColorBox color="#000000" name="Black" />
       </div>
+      <Footer />
     </div>
   );
 }
